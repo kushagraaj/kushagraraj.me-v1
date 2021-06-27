@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/brucemacgary/kushagraraj.me"
+    "url": "https://github.com/kushagraraj/kushagraraj.me"
   },
   "scripts": {
     "dev": "next dev",

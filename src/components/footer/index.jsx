@@ -6,7 +6,7 @@ import { seo, data } from "config"
 
 const socialAccounts = [
   
-  { icon: FaGithub, path: "https://github.com/brucemacgary", title: "Github" },
+  { icon: FaGithub, path: "https://github.com/kushagraraj", title: "Github" },
   { icon: FaMailBulk, path: "mailto:hi@kushagraraj.me", title: "Mail" },
   { icon: FaInstagram, path: "https://www.instagram.com/brucemacgary__", title: "Instagram" },
   { icon: FaSpotify, path: "https://open.spotify.com/user/swfc7nj2mx7i1h6n0kf81itge", title: "Spotify" },
@@ -71,7 +71,7 @@ const Footer = () => {
             
             <ChakraLink
               color={purples}
-              href="https://github.com/brucemacgary"
+              href="https://github.com/kushagraraj"
               fontWeight="600"
               _focus={{ outline: "none" }}
               _hover={{ textDecoration: "none" }}
