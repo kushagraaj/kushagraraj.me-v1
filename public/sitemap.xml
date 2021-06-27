@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://kushagraraj.me/blog</loc>
+  </url>
+
+  <url>
+    <loc>https://kushagraraj.me/about</loc>
+  </url>
+
+  <url>
+    <loc>https://kushagraraj.me</loc>
+  </url>
+
+  <url>
+    <loc>https://kushagraraj.me/blog/classic-doom-with-friends</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://kushagraraj.me/blog/creating-npx-card</loc
+    >
+  </url>
+
+</urlset>

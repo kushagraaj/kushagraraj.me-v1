@@ -1,0 +1,104 @@
+:root {
+	--color-primary: rgb(0, 0, 0);
+	--color-background: rgb(255, 255, 255);
+	--color-inlineCode-fg: var(--color-primary);
+	--color-inlineCode-bg: rgb(220, 220, 220);
+	--values-primary-accent: 91, 52, 218;
+	--color-primary-accent: rgb(91, 52, 218);
+	--color-secondary-accent: rgb(53, 142, 241);
+	--color-chameleon: var(--color-primary-accent);
+
+	--font-family-code: Iosevka Web, SFMono-Regular, Consolas, Roboto Mono, Menlo, Monaco,
+		Liberation Mono, Lucida Console, monospace;
+	--color-success-accent: rgb(172, 180, 176);
+	--color-success-accent-faded: rgba(0, 255, 127, 0.19);
+	--color-danger-accent: rgb(255, 128, 0);
+	--color-danger-accent-faded: rgba(255, 128, 0, 0.2);
+	--color-info-accent: rgb(0, 191, 255);
+	--color-info-accent-faded: rgba(0, 191, 255, 0.27);
+	--color-error: rgb(255, 0, 0);
+	--color-bg-blurred: rgba(255,255,255,0.93);
+	--max-width: 650px;
+  --border-radius: 5px;
+	}
+
+
+  .remark-code-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 15.75px;
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+    padding: 10px 8px;
+    margin: 0.5em 0 0 0;
+    border: 1px solid #9D86E9;
+    border-bottom: none;
+  }
+html,
+body {
+-webkit-tap-highlight-color: transparent;
+} 
+
+a {
+  text-decoration: none;
+	cursor: pointer;
+	color: var(--color-primary-accent);
+	border-bottom: 2px solid transparent;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--color-primary-accent);
+  text-decoration: none;
+}
+
+
+@font-face { 
+  font-family: "Rubik";
+  font-weight: 400; 
+  src: url("/fonts/Rubik/Rubik-v.woff2") format('truetype');
+}
+
+.chakra-ui-light .remark-code-title {
+  color: black;
+  background-color: #ffffff;
+}
+
+.chakra-ui-dark .remark-code-title {
+  color: #ffffff;
+  background-color: black;
+}
+
+pre {
+  padding: 10px 0;
+}
+
+.remark-code-title + pre {
+  padding: 0 0 10px 0;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  font-weight: 400;
+  font-style: italic;
+  border-left-width: 0.25rem;
+  border-left-color: #9D86E9;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p:first-of-type:before {
+  content: open-quote;
+}
+
+blockquote p:last-of-type:after {
+  content: close-quote;
+}
+
+:not(pre):not(span)::selection {
+  background: rgba(var(--values-primary-accent), 0.99);
+  color: var(--color-background)
+}
