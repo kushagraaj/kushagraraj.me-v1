@@ -22,6 +22,7 @@ const Footer = () => {
 
   return (
     <>
+    <div id="footer">
     <Box as="footer"  >
       <Box
         display="flex"
@@ -107,6 +108,7 @@ const Footer = () => {
       </Box>
       
     </Box>
+    </div>
     </>
   )
 }
