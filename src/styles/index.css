@@ -55,6 +55,9 @@ a:hover {
   text-decoration: none;
 }
 
+.footer{
+  position: fixed;
+}
 
 @font-face { 
   font-family: "Rubik";
