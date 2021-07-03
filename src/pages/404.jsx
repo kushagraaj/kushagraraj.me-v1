@@ -22,13 +22,13 @@ const Home = () => {
       <head>
           <link
             rel="preload"
-            href="/fonts/Rubik/Rubik-v.woff2"
+            href="/fonts/Rubik.woff2"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="/fonts/Rubik/Rubik-v.woff2"
+            href="/fonts/Rubik.woff2"
             as="font"
             crossOrigin=""
           />

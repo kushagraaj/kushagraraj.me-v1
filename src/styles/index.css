@@ -55,14 +55,10 @@ a:hover {
   text-decoration: none;
 }
 
-.footer{
-  position: fixed;
-}
-
 @font-face { 
   font-family: "Rubik";
   font-weight: 400; 
-  src: url("/fonts/Rubik/Rubik-v.woff2") format('truetype');
+  src: url("/fonts/Rubik.woff2") format('truetype');
 }
 
 .chakra-ui-light .remark-code-title {

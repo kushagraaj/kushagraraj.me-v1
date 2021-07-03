@@ -17,12 +17,12 @@ class MyDocument extends Document {
         <meta name="theme-color" content="#9D86E9" />
           <link
             rel="preload"
-            href="/fonts/Rubik/Rubik-v.woff2"
+            href="/fonts/Rubik.woff2"
             as="font"
           />
           <link
             rel="preload"
-            href="/fonts/Rubik/Rubik-v.woff2"
+            href="/fonts/Rubik.woff2"
             as="font"
           />
       
