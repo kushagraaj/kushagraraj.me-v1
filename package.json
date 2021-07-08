@@ -15,10 +15,11 @@
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
     "@chakra-ui/react": "^1.6.3",
+    "@chakra-ui/theme-tools": "^1.1.7",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.4.5",
-    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/loader": "^0.15.4",
     "@next/mdx": "^11.0.0",
     "dayjs": "^1.10.5",
     "framer-motion": "^4.1.17",

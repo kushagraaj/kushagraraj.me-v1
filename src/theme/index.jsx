@@ -1,5 +1,5 @@
 import { extendTheme } from "@chakra-ui/react"
-
+import { mode } from "@chakra-ui/theme-tools"
 
 const styles = {
   global: (theme) => ({
@@ -13,6 +13,18 @@ const styles = {
         
       },
     },
+    scrollbarWidth: `thin`,
+      scrollbarColor: mode(`blueGray.400 blueGray.200`, `blueGray.400 blueGray.700`),
+      "::-webkit-scrollbar": {
+        width: `7px`,
+      },
+      "::-webkit-scrollbar-track": {
+        backgroundColor: mode(`blueGray.200`, `blueGray.700`),
+      },
+      "::-webkit-scrollbar-thumb": {
+        backgroundColor: theme.colorMode === "light" ? "#5B34DA" : "#9D86E9",
+        borderWidth: `1px`,
+      },
   })
 };
 
