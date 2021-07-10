@@ -35,7 +35,7 @@ const Home = () => {
         py="4"
       > 
         <Box py="4">
-          <Heading fontSize={["4xl", "4xl"]} fontWeight="900" mt="5">
+          <Heading fontSize="48px" fontWeight="900" mt="5">
             Hey, I'm Kushagra Raj
           </Heading>
           

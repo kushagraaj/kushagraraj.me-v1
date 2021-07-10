@@ -36,13 +36,13 @@ const Home = () => {
       <Box
         as="section"
         d="flex"
-        alignItems="center"
+        alignItems="left"
         flexDir="column"
         textAlign="center"
         py="4"
       >
         <Box>
-          <Heading fontSize="120px" maxW="850px">
+          <Heading fontSize="48px" maxW="850px">
             /about
           </Heading>
         </Box>
