@@ -16,6 +16,7 @@ const Home = () => {
 
   return (
     <>
+    
      <MDXProvider components={MDXComponents}>
       <NextSeo
         title={title}
@@ -35,7 +36,7 @@ const Home = () => {
         py="4"
       > 
         <Box py="4">
-          <Heading fontSize="48px" fontWeight="900" mt="5">
+          <Heading fontSize="48px">
             Hey, I'm Kushagra Raj
           </Heading>
           

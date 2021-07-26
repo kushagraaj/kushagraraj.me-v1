@@ -58,18 +58,21 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
           as="section"
           py="4"
           fontSize="16px"
+          maxWidth="850px"
         >
-          <Box as="header" textAlign="center">
+          <Box as="header" textAlign="left">
             <Heading as="h1" py="4" size="2xl">
               {frontMatter.title}
             </Heading>
 
             <Flex direction="column">
               <Text fontSize="16px" color={color} py="1">
-                {frontMatter.author} •{" "}
-                {dayjs(frontMatter.publishedAt).format("MMMM DD, YYYY")}  •{" "}
+                {frontMatter.author} /{" "}
+                {dayjs(frontMatter.publishedAt).format("MMMM DD, YYYY")}  / {" "}
                 {frontMatter.readingTime.text}
               </Text>
+             
+              
               <Text py="1">
                 {frontMatter.tags.map((tag) => {
                   const color = tagColor[tag]

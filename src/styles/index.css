@@ -58,7 +58,7 @@ a:hover {
 @font-face { 
   font-family: "Rubik";
   font-weight: 400; 
-  src: url("/fonts/Rubik.woff2") format('truetype');
+  src: url("/fonts/Rubik.woff") format('woff');
 }
 
 .chakra-ui-light .remark-code-title {

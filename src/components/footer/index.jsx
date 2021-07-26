@@ -1,10 +1,9 @@
 import { Box, Button, Icon, Link as ChakraLink, Text, useColorModeValue } from "@chakra-ui/react"
 import { FaGithub, FaInstagram, FaSpotify, FaSnapchat, FaReddit, FaSteamSymbol, FaTwitch, FaMailBulk, FaDiscord } from "react-icons/fa"
-import { Head } from "next/head"
 const socialAccounts = [
   
   { icon: FaGithub, path: "https://github.com/kushagraraj", title: "Github" },
-  { icon: FaMailBulk, path: "mailto:hi@kushagraraj.me", title: "Mail" },
+  { icon: FaMailBulk, path: "mailto:hi@brucebolte.me", title: "Mail" },
   { icon: FaInstagram, path: "https://www.instagram.com/brucemacgary__", title: "Instagram" },
   { icon: FaSpotify, path: "https://open.spotify.com/user/swfc7nj2mx7i1h6n0kf81itge", title: "Spotify" },
   {icon: FaDiscord, path: "https://discord.gg/R2WC5qtaAu", title: "Discord" },
@@ -19,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-    <Box as="footer">
+    <Box as="footer" px={{ base: '4', md: '8' }} role="contentinfo" mx="auto" maxW="7xl" py="0" paddingBottom="0">
       <Box
         display="flex"
         justifyContent="center"

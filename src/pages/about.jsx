@@ -4,7 +4,6 @@ import { seo } from "config"
 import MDXComponents from "@/components/MDXComponents"
 import { MDXProvider } from "@mdx-js/react"
 import MDXAbout from "../data/about.mdx";
-import { RemoveBulletsFromList } from "../styles/typography";
 
 const Home = () => {
   const color = useColorModeValue("#5B34DA", "#9D86E9")
@@ -33,30 +32,17 @@ const Home = () => {
           ],
         }}
       />
-      <Box
-        as="section"
-        d="flex"
-        alignItems="left"
-        flexDir="column"
-        textAlign="center"
-        py="4"
-      >
-        <Box>
-          <Heading fontSize="48px" maxW="850px">
-            /about
+      <Box py="4">
+           <Heading fontSize="48px">
+            About
           </Heading>
-        </Box>
-      </Box>
+          </Box>
         <Box
         as="article"
         alignitem="left">
-          <RemoveBulletsFromList>
         <MDXAbout />
-        
-          </RemoveBulletsFromList>
         </Box>
         </MDXProvider>
-      
     </>
   )
 }

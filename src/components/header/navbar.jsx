@@ -2,7 +2,6 @@ import { useState } from "react"
 import { Box, chakra, useColorModeValue } from "@chakra-ui/react"
 import NextLink from "next/link"
 
-import HamburgerMenu from "../UI/hamburgerMenu"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,39 +21,37 @@ const Navbar = () => {
         flexDir={{ base: "row-reverse", lg: "row" }}
         alignItems="center"
         fontWeight="500"
+        position='sticky'
+        zIndex={10}
+        top={0}
+        backdropFilter='saturate(180%) blur(20px)'
       >
-        <HamburgerMenu toggled={isOpen} toggle={setIsOpen} />
+        
         <chakra.ul
-          bg={{ base: bg, lg: "transparent" }}
-          color={{ base: "white", lg: color }}
-          display={{
-            base: isOpen ? "block" : "none",
-            lg: "flex",
-          }}
-          position={{ base: "absolute", lg: "static" }}
+          bg="transparent"
+          color={color}
+          display="flex"
+          position="static"
           top="5rem"
+          spacing={12}
           left="5%"
           right="5%"
-          rounded={{ base: "lg", lg: "none" }}
           py={{ base: "2", lg: "0" }}
           px={{ base: "4", lg: "0" }}
-          alignItems={{ lg: "center" }}
+          alignItems="center"
           zIndex="2"
         >
           <chakra.li
+          spacing={12}
             listStyleType="none"
-            px={{ lg: "8" }}
-            py={{ base: "3", lg: "0" }}
           >
             <NextLink href="/" aria-label="homenav">
               <a onClick={closeMenu}>home</a>
             </NextLink>
           </chakra.li>
           <chakra.li
-            listStyleType="none"
-            px={{ lg: "8" }}
-            py={{ base: "3", lg: "0" }}
-            
+          spacing="12"
+          listStyleType="none"
           >
             <NextLink href="/about" aria-label="aboutnav">
               <a onClick={closeMenu}>about</a>
@@ -63,8 +60,9 @@ const Navbar = () => {
 
           <chakra.li
             listStyleType="none"
-            px={{ lg: "8" }}
-            py={{ base: "3", lg: "0" }}
+            
+            
+           
           >
             <NextLink href="/blog" aria-label="blognav">
               <a onClick={closeMenu}>blog</a>
@@ -79,4 +77,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -1,8 +1,10 @@
 import { extendTheme } from "@chakra-ui/react"
 import { mode } from "@chakra-ui/theme-tools"
+import { Global } from "@emotion/react"
 
 const styles = {
   global: (theme) => ({
+    
     "html, body": {
       fontSize: "20px",
     },
@@ -28,14 +30,12 @@ const styles = {
   })
 };
 
-const fonts = {
-  heading: "Rubik, -apple-system",
-  body: "Rubik, -apple-system",
-}
-
 const theme = extendTheme({
   styles,
-  fonts,
+  fonts: {
+    headings: 'Rubik',
+    body: 'Rubik',
+  },
   colors: {
     gray: {
       800: '#000000'

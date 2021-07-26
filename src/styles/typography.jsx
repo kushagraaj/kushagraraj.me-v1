@@ -6,6 +6,6 @@ export const RemoveBulletsFromList = styled.div`
 		padding-left: 30px;
 	}
 	& ul li {
-		padding: 5px;
+		padding: 0px;
 	}
 `;
