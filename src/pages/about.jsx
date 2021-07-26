@@ -9,7 +9,7 @@ const Home = () => {
   const color = useColorModeValue("#5B34DA", "#9D86E9")
   const isOdd = (num) => num % 2
 
-  const title = `About • ${seo.title}`
+  const title = `About — ${seo.title}`
   const description = seo.description
 
   return (

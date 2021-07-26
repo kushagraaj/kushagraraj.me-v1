@@ -9,7 +9,7 @@ const Websites = () => {
   const color = useColorModeValue("#5B34DA", "#9D86E9")
   const isOdd = (num) => num % 2
 
-  const title = `Websites • ${seo.title}`
+  const title = `Websites — ${seo.title}`
   const description = seo.description
 
   return (
@@ -32,19 +32,11 @@ const Websites = () => {
           ],
         }}
       />
-      <Box
-        as="section"
-        d="flex"
-        alignItems="center"
-        flexDir="column"
-        textAlign="center"
-        py="4"
-      >
-        <Box>
-          <Heading fontSize="120px" maxW="850px">
-            /websites
+      <Box py="4">
+        <Heading fontSize="48px">
+            Websites
           </Heading>
-        </Box>
+        
       </Box>
         <Box
         as="article"

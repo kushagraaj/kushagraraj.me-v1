@@ -11,7 +11,7 @@ const Home = () => {
   const text = useColorModeValue("black", "white")
   const isOdd = (num) => num % 2
 
-  const title = `Home • ${seo.title}`
+  const title = `Home — ${seo.title}`
   const description = seo.description
 
   return (

@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo"
 import { seo } from "config"
 
 const Home = () => {
-  const title = `404 • ${seo.title}`
+  const title = `404 — ${seo.title}`
   const description = "an invalid page"
   const purples = useColorModeValue("#5B34DA", "#9D86E9")
   return (

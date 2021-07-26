@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Box, chakra, useColorModeValue } from "@chakra-ui/react"
 import NextLink from "next/link"
+import css from "styled-components"
 
 
 const Navbar = () => {
@@ -50,7 +51,7 @@ const Navbar = () => {
             </NextLink>
           </chakra.li>
           <chakra.li
-          spacing="12"
+          spacing="12px"
           listStyleType="none"
           >
             <NextLink href="/about" aria-label="aboutnav">
@@ -58,12 +59,7 @@ const Navbar = () => {
             </NextLink>
           </chakra.li>
 
-          <chakra.li
-            listStyleType="none"
-            
-            
-           
-          >
+          <chakra.li listStyleType="none">
             <NextLink href="/blog" aria-label="blognav">
               <a onClick={closeMenu}>blog</a>
             </NextLink>
