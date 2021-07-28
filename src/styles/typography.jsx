@@ -9,3 +9,7 @@ export const RemoveBulletsFromList = styled.div`
 		padding: 0px;
 	}
 `;
+
+export const Accent = styled.span`
+	color: var(--color-primary-accent);
+`;

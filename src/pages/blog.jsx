@@ -68,8 +68,8 @@ const Blog = ({ posts }) => {
         }}
       />
       <Box py="4">
-           <Heading fontSize="48px">
-            Blog
+           <Heading fontSize="50px">
+            /blog
           </Heading>
           </Box>
           <Box

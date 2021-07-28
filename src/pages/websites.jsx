@@ -1,4 +1,4 @@
-import { Box, Heading, useColorModeValue } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 import { NextSeo } from "next-seo"
 import { seo } from "config"
 import MDXComponents from "@/components/MDXComponents"
@@ -6,12 +6,8 @@ import { MDXProvider } from "@mdx-js/react"
 import MDXWebsites from "../data/websites.mdx";
 
 const Websites = () => {
-  const color = useColorModeValue("#5B34DA", "#9D86E9")
-  const isOdd = (num) => num % 2
-
   const title = `Websites — ${seo.title}`
   const description = seo.description
-
   return (
     <>
     <MDXProvider components={MDXComponents}>
@@ -34,9 +30,8 @@ const Websites = () => {
       />
       <Box py="4">
         <Heading fontSize="48px">
-            Websites
+            /websites
           </Heading>
-        
       </Box>
         <Box
         as="article"

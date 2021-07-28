@@ -1,12 +1,11 @@
 import { extendTheme } from "@chakra-ui/react"
 import { mode } from "@chakra-ui/theme-tools"
-import { Global } from "@emotion/react"
 
 const styles = {
   global: (theme) => ({
     
     "html, body": {
-      fontSize: "20px",
+      fontSize: "18px",
     },
     a: {
       color: theme.colorMode === "light" ? "#5B34DA" : "#9D86E9",

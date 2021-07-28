@@ -1,15 +1,8 @@
 {
-
   "redirects": [
-
     {
-
       "source": "/playlist",
-
       "destination": "https://open.spotify.com/playlist/3nybd0SXnLDwKrdJGVZOQR"
-
-    },
-
+    }
   ]
-
 }

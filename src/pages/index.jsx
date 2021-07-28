@@ -3,7 +3,8 @@ import { NextSeo } from "next-seo"
 import { seo } from "config"
 import MDXComponents from "@/components/MDXComponents"
 import { MDXProvider } from "@mdx-js/react"
-import { RemoveBulletsFromList } from "../styles/typography"
+import Projects from "../data/home.mdx";
+import Timeline from "../data/timeline.mdx"
 
 const Home = () => {
   const color = useColorModeValue("#5B34DA", "#9D86E9")
@@ -16,7 +17,6 @@ const Home = () => {
 
   return (
     <>
-    
      <MDXProvider components={MDXComponents}>
       <NextSeo
         title={title}
@@ -36,15 +36,26 @@ const Home = () => {
         py="4"
       > 
         <Box py="4">
-          <Heading fontSize="48px">
-            Hey, I'm Kushagra Raj
+          <Heading fontSize="45px">
+            Hello there
           </Heading>
           
         </Box>
         <Text color={text}>
-				a developer, student from India. I like to code stuff using languages like javascript, typescript.
+				My name is Kushagra Raj aka BruceMacGary. I'm into developing and learning new things. I work with languages like javascript, typescript and python. You can visit{" "}
+        <ChakraLink
+            color={color}
+            _hover={{ textDecoration: "none" }}
+            href="/about"
+            aria-label="about-page"
+            >
+              this
+            </ChakraLink>
+            {" "}page to know more about me.
 			</Text>
-			<br />
+      <Projects />
+      <Timeline />
+      <br />
 			<Text color={text}>
 				I also ❤️{" "}
 			  many other things including:<br />
@@ -52,11 +63,6 @@ const Home = () => {
 				and the Internet!
 			</Text>
       </Box>
-
-    
-      <RemoveBulletsFromList>
-      
-      </RemoveBulletsFromList>
       </MDXProvider>
     </>
   )

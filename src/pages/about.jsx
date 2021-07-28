@@ -33,8 +33,8 @@ const Home = () => {
         }}
       />
       <Box py="4">
-           <Heading fontSize="48px">
-            About
+           <Heading fontSize="50px">
+            /about
           </Heading>
           </Box>
         <Box
