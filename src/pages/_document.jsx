@@ -1,6 +1,6 @@
 import { ColorModeScript } from "@chakra-ui/react"
 import Document, { Html, Head, Main, NextScript } from "next/document"
-
+import { GOOGLE_ANALYTICS } from '../lib/gtag'
 import colorMode from "@/theme/colorMode"
 
 class MyDocument extends Document {
@@ -13,6 +13,22 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+        <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         <script data-ad-client="ca-pub-3251229894075522" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <meta name="theme-color" content="#9D86E9" />
           <link
