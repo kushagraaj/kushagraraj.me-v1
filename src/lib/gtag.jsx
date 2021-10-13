@@ -1,8 +1,8 @@
-export const GA_TRACKING_ID = process.env.GOOGLE_ANALYTICS
+export const GA_ID = process.env.GA_ID
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
-  window.gtag('config', GOOGLE_ANALYTICS, {
+  window.gtag('config', GA_ID, {
     page_path: url,
   })
 }
