@@ -6,7 +6,8 @@ import Layout from "@/layouts/global"
 import SEO from "next-seo.config"
 import "@/styles/index.css"
 
-const MyApp = ({ Component, pageProps }) => (
+const MyApp = ({ Component, pageProps }) => {
+  return ( 
   <>
   <Box>
     <DefaultSeo {...SEO} />
@@ -18,6 +19,7 @@ const MyApp = ({ Component, pageProps }) => (
     </ChakraProvider>
   </Box>
   </>
-)
+ );
+}
 
 export default MyApp
