@@ -3,6 +3,10 @@
     {
       "source": "/playlist",
       "destination": "https://open.spotify.com/playlist/3nybd0SXnLDwKrdJGVZOQR"
+    },
+    {
+     "source": "/term1",
+     "destination": "https://kushagraraj.me/blog/cbse-sample-papers"
     }
   ]
 }
