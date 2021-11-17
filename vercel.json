@@ -7,6 +7,10 @@
     {
      "source": "/term1",
      "destination": "https://kushagraraj.me/blog/cbse-sample-papers"
+    },
+    {
+     "source": "/cbse",
+     "destination": "https://drive.google.com/folderview?id=191ddHItzBN6gQiTBIeJtf3Z6Lv3s69NN"
     }
   ]
 }
